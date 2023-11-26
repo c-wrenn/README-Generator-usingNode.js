@@ -91,6 +91,9 @@ ${renderLicenseLink(answers.license)}
 
 ${answers.test}
 
+##Contribution
+${answers.contribution}
+
 ## Questions
 
 If you have any questions, contact me at:
