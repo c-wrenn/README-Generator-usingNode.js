@@ -24,11 +24,11 @@ function renderLicenseBadge(license) {
   
   function renderLicenseLink(license) {
     var licenseLink = " ";
-    if (license === 'MIT') {
+    if (license === 'MIT License') {
       licenseLink = 'https://opensource.org/licenses/MIT'
     } else if (license === 'Modzilla Public License 2.0') {
       licenseLink = 'https://opensource.org/licenses/MPL-2.0'
-    }else if (license === 'Apache 2.0') {
+    }else if (license === 'Apache License 2.0') {
       licenseLink = 'https://opensource.org/licenses/Apache-2.0'
     }else if (license === 'GNU LGPLv3') {
       licenseLink = 'https://www.gnu.org/licenses/lgpl-3.0'
@@ -37,7 +37,7 @@ function renderLicenseBadge(license) {
     }else if (license === 'The Unlicense') {
       licenseLink = 'http://unlicense.org/'
     } else {
-      licenseLink = 'none'
+      licenseLink = 'N/A'
     }
     return licenseLink;
   };
