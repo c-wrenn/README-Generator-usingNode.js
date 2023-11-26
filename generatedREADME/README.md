@@ -1,42 +1,40 @@
 
-        # tea party;
+# README Generator using Node.js
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-         
+## Description
+This application will take in answers and create a README.md file with those answers.
 
-        ## Description
-
-        appls
-
-        ## Table of Contents
+## Table of Contents
         
-        * [Description](#description)
-        * [Installation](#install)
-        * [License](#license)
-        * [Usage](#usage)
-        * [Tests](#tests)
-        * [Contributing](#contribution)
-        * [Questions](#questions)
+  * [Description](#description)
+  * [Installation](#install)
+  * [License](#license)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Contributing](#contribution)
+  * [Questions](#questions)
 
-        ## Usage
+## Usage
 
-        dhosf
+This project uses the npm inquirer package.
 
-        ## Installation
+## Installation
 
-        fgg
+To install run the comman "npm install". Next run the command "node index.js" to prompt questions.
 
-        ## License
+## License
 
-        N/A
+This project is licensed under the MIT License.
+https://opensource.org/licenses/MIT
 
-        ##Tests
+##Tests
 
-        fvdv
+N/A
 
-        ## Questions
+## Questions
 
-        If you have any questions, contact me at:
+If you have any questions, contact me at:
 
-        Email: fgegbg
-        Github: https://github.com/fgfg
-        
+Email: crislynwren@yahoo.com
+Github: https://github.com/c-wrenn

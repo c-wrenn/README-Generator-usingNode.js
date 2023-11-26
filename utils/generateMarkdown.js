@@ -46,7 +46,7 @@ function renderLicenseBadge(license) {
   function renderLicenseSection(license) {
     var licenseSection = ''
     if(license === ' '){
-      lincenseSection = ''
+      licenseSection = ''
     } else {
   licenseSection = 
   `License: ${license}`
@@ -56,49 +56,47 @@ function renderLicenseBadge(license) {
 
 
     //generates readme based on answers
-    function generateREADME(answers) {
-        return `
-        # ${answers.title};
+function generateREADME(answers) {
+  return `
+# ${answers.title}
+${renderLicenseBadge(answers.license)}
 
-        ${renderLicenseBadge(answers.license)}
+## Description
+${answers.description}
 
-        ## Description
-
-        ${answers.description}
-
-        ## Table of Contents
+## Table of Contents
         
-        * [Description](#description)
-        * [Installation](#install)
-        * [License](#license)
-        * [Usage](#usage)
-        * [Tests](#tests)
-        * [Contributing](#contribution)
-        * [Questions](#questions)
+  * [Description](#description)
+  * [Installation](#install)
+  * [License](#license)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Contributing](#contribution)
+  * [Questions](#questions)
 
-        ## Usage
+## Usage
 
-        ${answers.usage}
+${answers.usage}
 
-        ## Installation
+## Installation
 
-        ${answers.contribution}
+${answers.install}
 
-        ## License
+## License
 
-        ${renderLicenseLink(answers.license)}
+This project is licensed under the ${answers.license}.
+${renderLicenseLink(answers.license)}
 
-        ##Tests
+##Tests
 
-        ${answers.test}
+${answers.test}
 
-        ## Questions
+## Questions
 
-        If you have any questions, contact me at:
+If you have any questions, contact me at:
 
-        Email: ${answers.email}
-        Github: https://github.com/${answers.github}
-        `;
+Email: ${answers.email}
+Github: https://github.com/${answers.github}`;
     }
 
 module.exports = generateREADME;
