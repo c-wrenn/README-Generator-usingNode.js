@@ -19,6 +19,11 @@ const readmequestions = [
     name: 'description',
 },
 {
+    type: 'input',
+    message: "What should the user know when using your repository?",
+    name: 'usage',
+},
+{
     //instructions to install
     type: 'input',
     message: "Enter the installation instructions: ",
@@ -61,36 +66,6 @@ const readmequestions = [
     
 ];
 
-// inquirer
-// //goes through questions
-// .prompt(readmequestions)
-// .then((answers) => {
-//     //convert to string
-//     console.log(JSON.stringify(answers));
-//     writeRMFile(answers);
-// });
-
-
-// function writeRMFile(answers) {
-//     const readmeContents = 
-//     // `
-//     // Title:                      ${answers.username}
-//     // Description:                ${answers.userLanguages}
-//     // Table of Contents:          ${answers.TOContents}
-//     // Project Purpose:            ${answers.purpose}
-//     // How to Install:             ${answers.install}
-//     // `;
-
-//     //writeFile function will create a file called answers.txt, txt file
-//     //pass in fileContents variable.
-//     fs.writeRMFile('README.md', generateREADME(readmeContents), (err) => {
-//         if (err) {
-//             console.error(err);
-//         }else {
-//             console.log("Your README file has been created!");
-//         }
-//     })
-//}
 
 const writeToFile = fileContent => {
     return new Promise((resolve, reject) => {
@@ -106,7 +81,7 @@ const writeToFile = fileContent => {
     });
 };
 
-// }
+
 function init() {
     inquirer
     .prompt(readmequestions)

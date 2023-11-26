@@ -1,13 +1,13 @@
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     var licenseBadge = " ";
-    if (license === 'MIT') {
+    if (license === 'MIT License') {
       licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     } else if (license === 'Modzilla Public License 2.0') {
       licenseBadge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-    }else if (license === 'Apache 2.0') {
+    }else if (license === 'Apache License 2.0') {
       licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
     }else if (license === 'GNU LGPLv3') {
       licenseBadge = '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)'
@@ -21,7 +21,7 @@ function renderLicenseBadge(license) {
     return licenseBadge;
   };
   
-  // If there is no license, return an empty string
+  
   function renderLicenseLink(license) {
     var licenseLink = " ";
     if (license === 'MIT') {
@@ -42,8 +42,7 @@ function renderLicenseBadge(license) {
     return licenseLink;
   };
   
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
+  // Create a function that returns the license section of README
   function renderLicenseSection(license) {
     var licenseSection = ''
     if(license === ' '){
@@ -56,8 +55,6 @@ function renderLicenseBadge(license) {
   }
 
 
-//will hold some static fi;es
-//class readmeLayout {
     //generates readme based on answers
     function generateREADME(answers){
         return`
@@ -87,9 +84,11 @@ function renderLicenseBadge(license) {
 
         ${answers.usage}
 
+
         ## Installation
 
         ${answers.contribution}
+
 
         ## License
 
@@ -100,16 +99,15 @@ function renderLicenseBadge(license) {
 
         ${answers.test}
 
+
         ## Questions
 
         If you have any questions, contact me at:
 
-        ${answers.email}
-        ${answers.github}
+        Email: ${answers.email}
+        Github: https://github.com/${answers.github}
         
         `;
     }
-//}
-
 
 module.exports = generateREADME;
