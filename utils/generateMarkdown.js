@@ -80,10 +80,11 @@ ${answers.usage}
 
 ## Installation
 
-${answers.contribution}
+${answers.install}
 
 ## License
 
+This project is licensed under the ${answers.license}.
 ${renderLicenseLink(answers.license)}
 
 ##Tests
