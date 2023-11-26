@@ -87,11 +87,11 @@ ${answers.install}
 This project is licensed under the ${answers.license}.
 ${renderLicenseLink(answers.license)}
 
-##Tests
+## Tests
 
 ${answers.test}
 
-##Contribution
+## Contribution
 ${answers.contribution}
 
 ## Questions

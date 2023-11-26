@@ -1,9 +1,9 @@
 
-# README Generator
+# README Generator using Node.js
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This project will prompt questions. It will then create a README.md file using those answers
+This project will prompt questions and create a README.md fle using the answers.
 
 ## Table of Contents
         
@@ -17,19 +17,22 @@ This project will prompt questions. It will then create a README.md file using t
 
 ## Usage
 
-This project uses node.js and npm inquirer package.
+This project uses the npm inquirer package.
 
 ## Installation
 
-to install first run the command "npm i". Next run the command "node index.js"
+To install first run "npm i". Next run "node index.js" to prompt questions.
 
 ## License
 
 This project is licensed under the MIT License.
 https://opensource.org/licenses/MIT
 
-##Tests
+## Tests
 
+N/A
+
+## Contribution
 N/A
 
 ## Questions
