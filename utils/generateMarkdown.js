@@ -56,17 +56,15 @@ function renderLicenseBadge(license) {
 
 
     //generates readme based on answers
-    function generateREADME(answers){
-        return`
-
-        # $(answers.title);
+    function generateREADME(answers) {
+        return `
+        # ${answers.title};
 
         ${renderLicenseBadge(answers.license)}
 
-
         ## Description
-        ${answers.description}
 
+        ${answers.description}
 
         ## Table of Contents
         
@@ -78,27 +76,21 @@ function renderLicenseBadge(license) {
         * [Contributing](#contribution)
         * [Questions](#questions)
 
-       
-
         ## Usage
 
         ${answers.usage}
-
 
         ## Installation
 
         ${answers.contribution}
 
-
         ## License
 
         ${renderLicenseLink(answers.license)}
 
-
         ##Tests
 
         ${answers.test}
-
 
         ## Questions
 
@@ -106,7 +98,6 @@ function renderLicenseBadge(license) {
 
         Email: ${answers.email}
         Github: https://github.com/${answers.github}
-        
         `;
     }
 
