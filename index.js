@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdownGenerator = require('./lib/README-Gen');
-const generateREADME = require('./lib/README-Gen');
+//const markdownGenerator = require('./lib/README-Gen');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 //inquirer.prompt (
 const readmequestions = [
