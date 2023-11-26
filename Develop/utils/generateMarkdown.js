@@ -111,5 +111,5 @@ function renderLicenseBadge(license) {
     }
 //}
 
-init();
+
 module.exports = generateREADME;
